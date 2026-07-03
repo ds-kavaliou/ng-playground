@@ -1,17 +1,26 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "types": [],
     "paths": {
-      "@app/routes/*": ["./src/routes/*"],
+      "@app/ui/button": ["./src/libs/ui/button/src/index.ts"],
+      "@app/ui/utils": ["./src/libs/ui/utils/src/index.ts"],
+      "@app/ui/autocomplete": ["./src/libs/ui/autocomplete/src/index.ts"],
+      "@app/ui/badge": ["./src/libs/ui/badge/src/index.ts"],
+      "@app/ui/card": ["./src/libs/ui/card/src/index.ts"],
+      "@app/ui/checkbox": ["./src/libs/ui/checkbox/src/index.ts"],
+      "@app/ui/dialog": ["./src/libs/ui/dialog/src/index.ts"],
+      "@app/ui/input": ["./src/libs/ui/input/src/index.ts"],
+      "@app/ui/select": ["./src/libs/ui/select/src/index.ts"],
+      "@app/ui/sonner": ["./src/libs/ui/sonner/src/index.ts"],
+      "@app/ui/switch": ["./src/libs/ui/switch/src/index.ts"],
+      "@app/ui/textarea": ["./src/libs/ui/textarea/src/index.ts"],
+      "@app/ui/toggle": ["./src/libs/ui/toggle/src/index.ts"],
+      "@app/ui/tooltip": ["./src/libs/ui/tooltip/src/index.ts"],
+      "@app/ui/popover": ["./src/libs/ui/popover/src/index.ts"],
+      "@app/ui/input-group": ["./src/libs/ui/input-group/src/index.ts"],
     }
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "src/**/*.spec.ts"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"]
 }
