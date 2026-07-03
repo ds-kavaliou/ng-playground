@@ -81,3 +81,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8;
+  }
+}
