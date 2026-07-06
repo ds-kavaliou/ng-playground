@@ -9,7 +9,11 @@ const API_URL = 'https://demo.angulararchitects.io/api/flight';
 @Component({
   selector: 'app-flights-page',
   imports: [FormField, HlmButton, HlmBadge],
-  template: ` <section class="container">flights</section> `,
+  template: `
+    <section class="container">
+      <form>1</form>
+    </section>
+  `,
 })
 export class MainFlightsPage {
   readonly filters = signal({
